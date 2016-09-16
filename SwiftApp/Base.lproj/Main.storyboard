@@ -29,16 +29,38 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ylb-4h-P0y"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-22-z4i" userLabel="Top Text Field">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GhS-Au-0cr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CcD-ad-hoo" userLabel="Bottom Text Field">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bnQ-OP-x3d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CcD-ad-hoo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9sS-9V-3HO"/>
+                            <constraint firstItem="mQ9-22-z4i" firstAttribute="top" secondItem="lUR-Pw-cCD" secondAttribute="bottom" constant="25" id="C8L-ae-aEA"/>
                             <constraint firstItem="lUR-Pw-cCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GxI-qV-T5A"/>
                             <constraint firstItem="SeQ-b0-mX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwb-NG-kYY"/>
                             <constraint firstItem="SeQ-b0-mX8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ZMs-h0-iws"/>
                             <constraint firstItem="lUR-Pw-cCD" firstAttribute="top" secondItem="SeQ-b0-mX8" secondAttribute="bottom" constant="25" id="eNo-Et-DIn"/>
+                            <constraint firstItem="CcD-ad-hoo" firstAttribute="top" secondItem="mQ9-22-z4i" secondAttribute="bottom" constant="50" id="xfy-v6-BGg"/>
+                            <constraint firstItem="mQ9-22-z4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zrJ-ef-8hd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="mQ9-22-z4i" id="atv-sU-uKx"/>
+                        <outlet property="text2" destination="CcD-ad-hoo" id="YNz-5c-N2U"/>
                         <outlet property="theLabel" destination="SeQ-b0-mX8" id="WbV-tr-4a3"/>
                     </connections>
                 </viewController>
