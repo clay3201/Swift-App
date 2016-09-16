@@ -14,13 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var Text1: UITextField!
     @IBOutlet weak var text2: UITextField!
     
-    var tapCount = 0
+
     
 
     @IBAction func buttonTapped(_ sender: AnyObject) {
         
-        print(Text1.text!)
-        print(text2.text!)
+        theLabel.text = "Answer is: \(Double(Text1.text!)! + Double(text2.text!)!)"
+        
+
         
     }
 
